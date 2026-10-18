@@ -1,0 +1,181 @@
+{
+ "groups": [
+  [
+   "feature views",
+   "BRIDGE",
+   [
+    "BRIDGE w/o baseline reference",
+    "BRIDGE relative view only"
+   ]
+  ],
+  [
+   "graph mixing",
+   "BRIDGE",
+   [
+    "BRIDGE fixed equal graph mix",
+    "BRIDGE without graph"
+   ]
+  ],
+  [
+   "attention biases",
+   "BRIDGE-GT",
+   [
+    "BRIDGE-GT anatomical bias only",
+    "BRIDGE-GT functional bias only",
+    "BRIDGE-GT without graph bias"
+   ]
+  ]
+ ],
+ "summary": {
+  "BRIDGE": {
+   "auroc": [
+    0.944213011393843,
+    0.920280858933446,
+    0.9650901729208617
+   ],
+   "auprc": [
+    0.5994296075457286,
+    0.4764814508846121,
+    0.7024877478932485
+   ]
+  },
+  "BRIDGE w/o baseline reference": {
+   "auroc": [
+    0.8626539388203922,
+    0.8045592340283793,
+    0.9124948269037417
+   ],
+   "auprc": [
+    0.44996674585036306,
+    0.3308933708410223,
+    0.5550536268195612
+   ],
+   "delta_auroc_vs_BRIDGE": 0.08155907257345085,
+   "wins_auroc": 20,
+   "p_auroc": 0.00025343894958496094,
+   "delta_auprc_vs_BRIDGE": 0.14946286169536557,
+   "wins_auprc": 19,
+   "p_auprc": 0.0006387233734130859
+  },
+  "BRIDGE relative view only": {
+   "auroc": [
+    0.9496682005470849,
+    0.9276768318133188,
+    0.9688378285025453
+   ],
+   "auprc": [
+    0.6279128889908584,
+    0.5100788431874037,
+    0.7309788913845829
+   ],
+   "delta_auroc_vs_BRIDGE": -0.005455189153241888,
+   "wins_auroc": 10,
+   "p_auroc": 0.4633810520172119,
+   "delta_auprc_vs_BRIDGE": -0.028483281445129797,
+   "wins_auprc": 9,
+   "p_auprc": 0.2725830078125
+  },
+  "BRIDGE fixed equal graph mix": {
+   "auroc": [
+    0.9438358483841196,
+    0.9206109239682262,
+    0.964494795977235
+   ],
+   "auprc": [
+    0.5930462543661082,
+    0.47062363838928983,
+    0.6960518951456058
+   ],
+   "delta_auroc_vs_BRIDGE": 0.0003771630097236124,
+   "wins_auroc": 13,
+   "p_auroc": 0.8932116031646729,
+   "delta_auprc_vs_BRIDGE": 0.006383353179620364,
+   "wins_auprc": 15,
+   "p_auprc": 0.032669782638549805
+  },
+  "BRIDGE without graph": {
+   "auroc": [
+    0.9407812497275737,
+    0.914082064090497,
+    0.9634201741856231
+   ],
+   "auprc": [
+    0.5900057170832224,
+    0.46858750030150814,
+    0.6947836975775865
+   ],
+   "delta_auroc_vs_BRIDGE": 0.0034317616662694135,
+   "wins_auroc": 13,
+   "p_auroc": 0.7539846897125244,
+   "delta_auprc_vs_BRIDGE": 0.00942389046250626,
+   "wins_auprc": 12,
+   "p_auprc": 0.41003966331481934
+  },
+  "BRIDGE-GT": {
+   "auroc": [
+    0.9278630662455731,
+    0.8868977719776043,
+    0.9615041289297103
+   ],
+   "auprc": [
+    0.5978906834679518,
+    0.4836977684389958,
+    0.6998319534519674
+   ]
+  },
+  "BRIDGE-GT anatomical bias only": {
+   "auroc": [
+    0.9265225532872577,
+    0.8835525042257932,
+    0.9606440691942628
+   ],
+   "auprc": [
+    0.588030677592376,
+    0.46660542848524833,
+    0.6911524392142521
+   ],
+   "delta_auroc_vs_BRIDGE-GT": 0.0013405129583153005,
+   "wins_auroc": 12,
+   "p_auroc": 0.5009052753448486,
+   "delta_auprc_vs_BRIDGE-GT": 0.00986000587557591,
+   "wins_auprc": 13,
+   "p_auprc": 0.25945234298706055
+  },
+  "BRIDGE-GT functional bias only": {
+   "auroc": [
+    0.9270312109462241,
+    0.8843270191559103,
+    0.9612500421250679
+   ],
+   "auprc": [
+    0.6086147027989115,
+    0.48414895994785967,
+    0.7129251387921797
+   ],
+   "delta_auroc_vs_BRIDGE-GT": 0.0008318552993487725,
+   "wins_auroc": 9,
+   "p_auroc": 0.6868791580200195,
+   "delta_auprc_vs_BRIDGE-GT": -0.010724019330959629,
+   "wins_auprc": 11,
+   "p_auprc": 0.6433901786804199
+  },
+  "BRIDGE-GT without graph bias": {
+   "auroc": [
+    0.924139991276969,
+    0.87885281127161,
+    0.959476596363917
+   ],
+   "auprc": [
+    0.604481157078807,
+    0.4822030909485685,
+    0.7067205272058588
+   ],
+   "delta_auroc_vs_BRIDGE-GT": 0.0037230749686038784,
+   "wins_auroc": 8,
+   "p_auroc": 0.6868791580200195,
+   "delta_auprc_vs_BRIDGE-GT": -0.00659047361085512,
+   "wins_auprc": 10,
+   "p_auprc": 0.6649994850158691
+  }
+ }
+}

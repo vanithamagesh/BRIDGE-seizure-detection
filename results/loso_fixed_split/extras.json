@@ -1,0 +1,336 @@
+{
+ "ablation": {
+  "BRIDGE (full)": {
+   "auroc": [
+    0.944213011393843,
+    0.920280858933446,
+    0.9650901729208617
+   ],
+   "auprc": [
+    0.5994296075457286,
+    0.4764814508846121,
+    0.7024877478932485
+   ]
+  },
+  "BRIDGE w/o baseline reference": {
+   "auroc": [
+    0.8626539388203922,
+    0.8045592340283793,
+    0.9124948269037417
+   ],
+   "auprc": [
+    0.44996674585036306,
+    0.3308933708410223,
+    0.5550536268195612
+   ]
+  },
+  "BRIDGE anatomical graph only": {
+   "auroc": [
+    0.9400978900676055,
+    0.9150502601546238,
+    0.9621483000581433
+   ],
+   "auprc": [
+    0.5728212843676878,
+    0.4492089217117656,
+    0.6772346530561708
+   ]
+  },
+  "BRIDGE functional graph only": {
+   "auroc": [
+    0.9423958558316025,
+    0.9156892362825647,
+    0.9643859266048807
+   ],
+   "auprc": [
+    0.6086870633947892,
+    0.48363209689092146,
+    0.7107990351912332
+   ]
+  },
+  "BRIDGE without graph": {
+   "auroc": [
+    0.9407812497275737,
+    0.914082064090497,
+    0.9634201741856231
+   ],
+   "auprc": [
+    0.5900057170832224,
+    0.46858750030150814,
+    0.6947836975775865
+   ]
+  },
+  "BRIDGE + 16-s temporal context": {
+   "auroc": [
+    0.9463465111390026,
+    0.9211096539485697,
+    0.9670113202618944
+   ],
+   "auprc": [
+    0.645870092758259,
+    0.5235639256319982,
+    0.7421082186599364
+   ]
+  }
+ },
+ "leakage": {
+  "random_split_auroc_folds": [
+   0.9931649495273898,
+   0.9941743456924754,
+   0.9940784567038916,
+   0.9922067293136406,
+   0.9947699834666
+  ],
+  "random_split_auroc": 0.9936788929407994,
+  "subject_wise_pooled_auroc": 0.9195833381657802
+ },
+ "quantization": {
+  "auroc_fp32": [
+   0.9442118516653792,
+   0.9202532486557741,
+   0.9650992653995661
+  ],
+  "auroc_int8": [
+   0.943081157485924,
+   0.9185563083948026,
+   0.9641302278477627
+  ],
+  "max_abs_prob_diff": [
+   0.3814258335725121,
+   0.31345020848447863,
+   0.45198318661878933
+  ]
+ },
+ "fixed_split": [
+  {
+   "model": "SPaRCNet",
+   "source": "Jing et al. 2023, reported in BIOT (NeurIPS 2023)",
+   "params": "",
+   "bacc": 0.5876,
+   "auprc": 0.1247,
+   "auroc": 0.8143,
+   "ours": 0
+  },
+  {
+   "model": "ContraWR",
+   "source": "Yang et al., reported in BIOT",
+   "params": "",
+   "bacc": 0.6344,
+   "auprc": 0.2264,
+   "auroc": 0.8097,
+   "ours": 0
+  },
+  {
+   "model": "CNN-Transformer",
+   "source": "Peh et al. 2022, reported in BIOT",
+   "params": "",
+   "bacc": 0.6389,
+   "auprc": 0.2479,
+   "auroc": 0.8662,
+   "ours": 0
+  },
+  {
+   "model": "FFCL",
+   "source": "Li et al. 2022, reported in BIOT",
+   "params": "",
+   "bacc": 0.6262,
+   "auprc": 0.2049,
+   "auroc": 0.8271,
+   "ours": 0
+  },
+  {
+   "model": "ST-Transformer",
+   "source": "Song et al. 2021, reported in BIOT",
+   "params": "",
+   "bacc": 0.5915,
+   "auprc": 0.1422,
+   "auroc": 0.8237,
+   "ours": 0
+  },
+  {
+   "model": "BIOT",
+   "source": "Yang, Westover, Sun, NeurIPS 2023",
+   "params": "",
+   "bacc": 0.7068,
+   "auprc": 0.3277,
+   "auroc": 0.8761,
+   "ours": 0
+  },
+  {
+   "model": "CBraMod",
+   "source": "Wang et al., ICLR 2025",
+   "params": "",
+   "bacc": NaN,
+   "auprc": 0.3689,
+   "auroc": 0.8892,
+   "ours": 0
+  },
+  {
+   "model": "CSBrain",
+   "source": "Zhou et al., NeurIPS 2025",
+   "params": "",
+   "bacc": NaN,
+   "auprc": 0.5164,
+   "auroc": 0.8915,
+   "ours": 0
+  },
+  {
+   "model": "BRIDGE",
+   "source": "this study",
+   "ours": 1,
+   "bacc": 0.9349049660659622,
+   "auprc": 0.6218775963541131,
+   "auroc": 0.9896506250026552,
+   "bacc_sd": 0.01029924177651387,
+   "auprc_sd": 0.024444425761860237,
+   "auroc_sd": 0.00101419988093434
+  },
+  {
+   "model": "BRIDGE-GT",
+   "source": "this study",
+   "ours": 1,
+   "bacc": 0.9239186027549202,
+   "auprc": 0.7398373331213737,
+   "auroc": 0.9909004791648898,
+   "bacc_sd": 0.014986641878364852,
+   "auprc_sd": 0.031245305096805544,
+   "auroc_sd": 0.0038950925107519687
+  },
+  {
+   "model": "Transformer",
+   "source": "this study",
+   "ours": 1,
+   "bacc": 0.9269282530482136,
+   "auprc": 0.7098767088461727,
+   "auroc": 0.9932787581452639,
+   "bacc_sd": 0.014195071439444104,
+   "auprc_sd": 0.056780666415085154,
+   "auroc_sd": 0.00398992016744047
+  },
+  {
+   "model": "MLP",
+   "source": "this study",
+   "ours": 1,
+   "bacc": 0.9489656058174317,
+   "auprc": 0.7999741660705381,
+   "auroc": 0.9974334595790002,
+   "bacc_sd": 0.009633837386372164,
+   "auprc_sd": 0.02426748060680064,
+   "auroc_sd": 0.0005435277195214206
+  },
+  {
+   "model": "LogReg",
+   "source": "this study",
+   "ours": 1,
+   "bacc": 0.9012975721157538,
+   "auprc": 0.41237190080293185,
+   "auroc": 0.9776790601805873,
+   "bacc_sd": 0.01062214512146759,
+   "auprc_sd": 0.0077453236602482295,
+   "auroc_sd": 0.0008294464694996939
+  },
+  {
+   "model": "RandomForest",
+   "source": "this study",
+   "ours": 1,
+   "bacc": 0.8948603258203599,
+   "auprc": 0.8128158386773386,
+   "auroc": 0.9981630160655209,
+   "bacc_sd": 0.0025777042644828676,
+   "auprc_sd": 0.005978581132454942,
+   "auroc_sd": 0.00016427765545277693
+  },
+  {
+   "model": "RawCNN",
+   "source": "this study",
+   "ours": 1,
+   "bacc": 0.8192149303884072,
+   "auprc": 0.20172424080044957,
+   "auroc": 0.9308866249856614,
+   "bacc_sd": 0.016595862654292286,
+   "auprc_sd": 0.06239443907743249,
+   "auroc_sd": 0.009909633318319644
+  },
+  {
+   "model": "BRIDGE w/o baseline reference",
+   "source": "this study",
+   "ours": 1,
+   "bacc": 0.9175900198927615,
+   "auprc": 0.41341294648740584,
+   "auroc": 0.9871648059892015,
+   "bacc_sd": 0.02029645451887355,
+   "auprc_sd": 0.03539359662104491,
+   "auroc_sd": 0.003413459596070706
+  }
+ ],
+ "efficiency": [
+  {
+   "model": "BRIDGE",
+   "params": 7108,
+   "macs": 108096,
+   "size_fp32_kB": 34.9189453125,
+   "cpu_latency_ms": 0.9174959996016696,
+   "size_int8_kB": 19.7529296875,
+   "cpu_latency_int8_ms": 1.3384305011641118
+  },
+  {
+   "model": "BRIDGE-GT",
+   "params": 20562,
+   "macs": 350016,
+   "size_fp32_kB": 92.8037109375,
+   "cpu_latency_ms": 1.2662310000450816,
+   "size_int8_kB": 44.4892578125,
+   "cpu_latency_int8_ms": 1.8472404990461655
+  },
+  {
+   "model": "BRIDGE + 16-s temporal context",
+   "params": 17540,
+   "macs": 463936,
+   "size_fp32_kB": 76.7197265625,
+   "cpu_latency_ms": 1.3231660004748846,
+   "size_int8_kB": 32.1162109375,
+   "cpu_latency_int8_ms": 1.7290285004492034
+  },
+  {
+   "model": "Transformer",
+   "params": 20482,
+   "macs": 350016,
+   "size_fp32_kB": 90.130859375,
+   "cpu_latency_ms": 0.7250975004353677
+  },
+  {
+   "model": "MLP",
+   "params": 25250,
+   "macs": 25152,
+   "size_fp32_kB": 101.3330078125,
+   "cpu_latency_ms": 0.12771549972967478,
+   "size_int8_kB": 29.6240234375,
+   "cpu_latency_int8_ms": 0.24462050078000175
+  },
+  {
+   "model": "RawCNN",
+   "params": 76514,
+   "macs": 5619840,
+   "size_fp32_kB": 309.5712890625,
+   "cpu_latency_ms": 1.0177894992011716
+  },
+  {
+   "model": "feature extraction (one 4-s window, 18 channels)",
+   "cpu_latency_ms": 1.9753605001824326,
+   "filter_ms": 0.23903299916128162
+  },
+  {
+   "model": "patient-baseline reference (median of a 150-window ring buffer)",
+   "memory_kB": 47.4609375,
+   "cpu_latency_ms": 0.7842229997550021
+  },
+  {
+   "model": "LogReg",
+   "params": 361
+  },
+  {
+   "model": "RandomForest",
+   "params": 126404
+  }
+ ]
+}

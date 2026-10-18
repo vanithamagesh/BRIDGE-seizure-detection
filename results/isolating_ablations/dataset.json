@@ -1,0 +1,49 @@
+{
+ "windows": 199301,
+ "ictal_windows": 2779,
+ "augmented_ictal": 8346,
+ "subjects": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  22,
+  23,
+  24
+ ],
+ "files": 161,
+ "hours": 221.46527777777777,
+ "seizures": 185,
+ "skipped": [
+  [
+   "chb12_27.edf",
+   "missing channels or rate"
+  ],
+  [
+   "chb12_28.edf",
+   "missing channels or rate"
+  ],
+  [
+   "chb12_29.edf",
+   "missing channels or rate"
+  ]
+ ],
+ "fixed_split_extra_test_files": 0,
+ "fixed_split_extra_test_hours": 0.0
+}
